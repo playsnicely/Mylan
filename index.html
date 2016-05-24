@@ -1,0 +1,35 @@
+
+
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+
+    <title>Castle Loader</title>
+
+
+    </script>
+</head>
+
+<body>
+
+<div id="content">
+    <p>Game needs to open in a popup to function correctly.</p>
+    <p>Use arrow keys to move</p>
+    <button onclick="myFunction()">Try it Out</button>
+
+    <p>(Untested in IE.)</p>
+
+<script>
+function myFunction() {
+    var winFeature = 'innerWidth=200,innerHeight=200,location=0,toolbar=0,menubar=0,scrollbars=0,resizable=0,titlebar=no,status=0';
+    var myWindow = window.open("game.html", "_blank", winFeature);
+
+
+}
+</script>
+    
+</div>
+
+</body>
+</html>

@@ -82,21 +82,21 @@ Game.Play.prototype =
 	        {
 	        
 	            var wall = game.add.sprite(40*j,40*i, 'block0');
-	           	walls.add(wall);
+	           walls.add(wall);
 	            game.physics.enable(wall, Phaser.Physics.ARCADE);
 	            wall.body.immovable = true;
 
-	           	overlay.draw(block1, 40*j,40*i);
+	           overlay.draw(block1, 40*j,40*i);
 	        }
 	    }
 	    }
 
-	    mask1 = game.add.sprite(0, 0, 'mask1');
+	    mask1 = game.add.sprite(1500, 0, 'mask1');
 	   	mask1.anchor.setTo(.5, .5);
 
 	    bmd = game.make.bitmapData(800, 640);
 	    
-		game.add.image(0, 0, overlay2)
+	game.add.image(0, 0, overlay2)
 
 	    player = game.add.sprite(sX, sY, 'mylan');
 	    player.anchor.setTo(.5, 1);
